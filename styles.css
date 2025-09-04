@@ -7,6 +7,11 @@
     );
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -34,11 +39,13 @@ hr{
 }
 
 .header_nav_imagen{
-    padding-top: 0px;
-    width: 100%;
-    height: 100%;
     text-align: center;
-    padding-top: 20px;
+    position: fixed;
+    padding-top: 5px;
+    width: 100vw;
+    background-color: #161616;
+    z-index: 2;
+    border-radius: 0 0 50px 50px;
 }
 
 .header_nav_imagen .imagen{
@@ -54,6 +61,7 @@ hr{
     flex-direction: column;
     align-items: center;
     padding-bottom: 7px;
+    padding-top: 55px;
 }
 
 .header_nav_container a{
@@ -222,6 +230,12 @@ hr{
     padding: 20px;
     border-radius: 40px;
     overflow: hidden;
+    opacity: 0;
+}
+
+.activoInicio{
+    opacity: 1;
+    animation: ingresar 4s;
 }
 
 .seccion_inicio_carta h1:nth-child(1){
@@ -333,6 +347,12 @@ hr{
     padding: 20px;
     border-radius: 40px;
     overflow: hidden;
+    opacity: 0;
+}
+
+.activoNosotros{
+    opacity: 1;
+    animation: ingresar 4s;
 }
 
 .seccion_nosotros_carta h1{
@@ -424,6 +444,7 @@ hr{
     grid-column: 2/3;
     grid-row: 1/2;
     opacity: 0;
+    pointer-events: none;
     width: 75vw;
     max-width: 251px;
     height: 42.5vh;
@@ -436,7 +457,31 @@ hr{
     height: 100%;
     gap: 8px;
     overflow: hidden;
+    transition: opacity 1s;
 }
+
+
+.seccion_servicios_slaider--show{
+    pointer-events: unset;
+    opacity: 1;
+}
+
+.activoSlaider{
+    animation: ingresar 4s;
+}
+
+@keyframes ingresar{
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);;
+    }
+}
+
 
 .poligono{
     width: 7vw;
@@ -456,10 +501,6 @@ hr{
     width: 100%;
     height: 50%;
     border-radius: 40px;
-}
-
-.seccion_servicios_slaider--show{
-    opacity: 1;
 }
 
 .seccion_servicios_slaider .imagen{
@@ -486,7 +527,7 @@ hr{
 
 .seccion_servicios_slaider_texto_items{
     display: flex;
-    gap: 5px;
+    gap: 15px;
     padding-left: 20px;
     padding-bottom: 10px;
 }
@@ -606,7 +647,7 @@ hr{
     padding: 2px 0;
     padding-left: 7px;
     width: 50vw;
-    height: 3vh;
+    height: 3.5vh;
     max-width: 220px;
     border-radius: 10px;
     background-color: #292929;
@@ -677,7 +718,7 @@ footer{
 }
 
 .footer_contenedor_texto p:nth-child(1){
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .footer_contenedor_texto_politicas{
@@ -691,7 +732,7 @@ footer{
 }
 
 .footer_contenedor_texto_politicas p{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .footer_contenedor_texto_contactos{
@@ -705,7 +746,7 @@ footer{
 }
 
 .footer_contenedor_texto_contactos p{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .footer_contenedor_texto_contactos_redes{

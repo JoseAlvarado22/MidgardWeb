@@ -13,20 +13,20 @@
 <body>
 
     <!--  -->
-    <header class="header">
+    <header id="principal" class="header">
         <nav class="header_nav">
-            <div class="header_nav_imagen"><img class="imagen" src="midgardweb_logo.svg" alt="Logo MidgardWeb"></div>
+            <div class="header_nav_imagen"><img id="logo" class="imagen" src="midgardweb_logo.svg" alt="Logo MidgardWeb"></div>
 
             <div class="header_nav_container">
-                <a href="">Inicio</a>
-                <a href="">Nosotros</a>
-                <a href="">Servicios</a>
-                <a href=""><span>Contactanos</span></a>
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contactanos"><span>Contactanos</span></a>
             </div>
         </nav>
     </header>
 
-    <!--  -->
+    <!-- principal -->
     <main class="principal">
         <div class="principal_container">
             <div class="principal_container_imagen"><img class="imagen" src="Celular (1).svg" alt="Telefono"></div>
@@ -50,8 +50,8 @@
     </main>
     <!-- <hr> -->
 
-    <!--  -->
-    <section class="seccion_inicio">
+    <!-- seccion_inicio -->
+    <section id="inicio" class="seccion_inicio">
         <img class="imagen_barras_superior" src="rectangulos.svg" alt="">
 
         <div class="seccion_inicio_texto">
@@ -141,8 +141,8 @@
     </section>
     <!-- <hr> -->
 
-    <!--  -->
-    <section class="seccion_nosotros">
+    <!-- seccion_nosotros -->
+    <section id="nosotros" class="seccion_nosotros">
         <img class="imagen_barras_superior" src="rectangulos.svg" alt="">
 
         <div class="seccion_nosotros_texto">
@@ -195,12 +195,12 @@
     </section>
     <!-- <hr> -->
 
-    <!--  -->
-    <section class="seccion_servicios">
+    <!--seccion_servicios -->
+    <section id="servicios" class="seccion_servicios">
         <img class="imagen_barras_superior" src="rectangulos.svg" alt="">
 
         <div class="seccion_servivios_texto">
-            <h1>Paginas web interactivas y responsivas con patibles con <span>cualquier dispositivo.</span></h1>
+            <h1>Paginas web interactivas y responsivas compatibles con <span>cualquier dispositivo.</span></h1>
             <p>quis sit gravida ipsum urna consectetur Nam lobortis, varius ullamcorper nisl. fringilla lorem. Nunc non placerat tortor. hendrerit Nunc placerat. ex. tortor. </p>
             <p>quis sit gravida ipsum urna consectetur Nam lobortis, varius ullamcorper nisl. fringilla lorem. Nunc non placerat tortor. hendrerit Nunc placerat. ex. tortor. </p>
         </div>
@@ -208,7 +208,7 @@
         <div class="seccion_servicios_slaiders">
             <img class="poligono poligono1" src="Polygon izquierdo.svg" alt="">
 
-            <div class="seccion_servicios_slaider seccion_servicios_slaider--show">
+            <div data-id="1" class="seccion_servicios_slaider seccion_servicios_slaider--show">
                 <div class="seccion_servicios_slaider_imagen"><img class="imagen" src="ion-fet-QRawWgV6gmo-unsplash.jpg" alt=""></div>
                 
                 <div class="seccion_servicios_slaider_texto">
@@ -234,12 +234,12 @@
                 </div>
             </div>
 
-            <div class="seccion_servicios_slaider">
-                <div class="seccion_servicios_slaider_imagen"><img class="imagen" src="ion-fet-QRawWgV6gmo-unsplash.jpg" alt=""></div>
+            <div data-id="2" class="seccion_servicios_slaider">
+                <div class="seccion_servicios_slaider_imagen"><img class="imagen" src="tai-bui-IMYU7kmPLwI-unsplash.jpg" alt=""></div>
                 
                 <div class="seccion_servicios_slaider_texto">
-                    <h1>Comodo visualmente</h1>
-                    <p>Pagina web comoda a la vista de los usuarios, contenido claro y consiso de tu empresa.</p>
+                    <h1>Responsividad </h1>
+                    <p>Pagina web adaptable a cualquier tipo de dispositivo.</p>
                 </div>
 
                 <div class="seccion_servicios_slaider_texto_items">
@@ -260,12 +260,12 @@
                 </div>
             </div>
 
-            <div class="seccion_servicios_slaider">
-                <div class="seccion_servicios_slaider_imagen"><img class="imagen" src="ion-fet-QRawWgV6gmo-unsplash.jpg" alt=""></div>
+            <div data-id="3" class="seccion_servicios_slaider">
+                <div class="seccion_servicios_slaider_imagen"><img class="imagen" src="rubaitul-azad-TVnvFrZG7Vg-unsplash.jpg" alt=""></div>
                 
                 <div class="seccion_servicios_slaider_texto">
-                    <h1>Comodo visualmente</h1>
-                    <p>Pagina web comoda a la vista de los usuarios, contenido claro y consiso de tu empresa.</p>
+                    <h1>Diseños modernos desde cero</h1>
+                    <p>Diseñamos tu pagina dede cero, con figma creando el prototipo.</p>
                 </div>
 
                 <div class="seccion_servicios_slaider_texto_items">
@@ -296,7 +296,7 @@
     </section>
 
     <!--seccion contactanos-->
-    <section class="seccion_contactanos">
+    <section id="contactanos" class="seccion_contactanos">
         <img class="imagen_barras_superior" src="rectangulos.svg" alt="">
 
         <div class="seccion_contactanos_contenedor">
@@ -338,10 +338,10 @@
                     <P>Atenciones: Lunes a Viernes de 8:00h a 18:00h Colombia</P>
 
                     <div class="footer_contenedor_texto_contactos_redes">
-                        <img class="facebook" src="facebook.svg" alt="">
-                        <img class="email" src="envelope-fill.svg" alt="">
-                        <img class="whatsapp" src="whatsapp.svg" alt="">
-                        <img class="insta" src="instagram.svg" alt="">
+                        <a href="https://web.facebook.com/?locale=es_LA"><img class="facebook" src="facebook.svg" alt=""></a>
+                        <a href="mailto:josecarlosalvaradobarragan@gmail.com"><img class="email" src="envelope-fill.svg" alt=""></a>
+                        <a href="https://web.whatsapp.com/"><img class="whatsapp" src="whatsapp.svg" alt=""></a>
+                        <a href="https://www.instagram.com/"><img class="insta" src="instagram.svg" alt=""></a>
                     </div>
 
                     <p>Copyrigth 2025 - MidgarWeb. Reservados todos los derechos</p>
@@ -349,8 +349,8 @@
 
             </div>
         </div>
-
     </footer>
 
+    <script src="app.js"></script>
 </body>
 </html>
