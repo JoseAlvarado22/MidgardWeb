@@ -1,3 +1,4 @@
+
 :root{
     --Color-Grdiente-Rojo:linear-gradient(
         90deg,
@@ -114,7 +115,7 @@ hr{
 }
 
 .principal_container_texto p{
-    font-size: clamp(12px, 3vw, 25px);
+    font-size: clamp(14px, 3vw, 25px);
 }
 
 .principal_container_links{
@@ -129,7 +130,7 @@ hr{
     text-decoration: none;
     color: white;
     padding: 7px 10px;
-    font-size: clamp(9px, 2vw, 22px);
+    font-size: clamp(12px, 2vw, 22px);
     border-radius: 5px;
 }
 
@@ -150,14 +151,14 @@ hr{
 }
 
 .principal_container_iconos img{
-    width: 25vw;
+    width: 15vw;
     min-width: 40px;
     height: 6vh;
 }
 
 
 .principal_container_iconos img:nth-child(3){
-    width: calc(25vw * 1.2);
+    width: calc(15vw * 1.2);
 }
 
 /* seccion inicio */
@@ -198,7 +199,7 @@ hr{
 }
 
 .seccion_inicio_texto p{
-    font-size: clamp(12px, 3vw, 25px);
+    font-size: clamp(14px, 3vw, 25px);
 }
 
 .seccion_inicio_cartas{
@@ -215,7 +216,7 @@ hr{
     width: 80%;
     height: 42.5vh;
     max-width: 300px;
-    max-height: 350px;
+    max-height: 270px;
     box-shadow: 0px 0px 7px white;
     gap: 5px;
     padding: 20px;
@@ -309,7 +310,7 @@ hr{
 }
 
 .seccion_nosotros_texto P{
-    font-size: clamp(12px, 3vw, 25px);
+    font-size: clamp(14px, 3vw, 25px);
 }
 
 .seccion_nosotros_cartas{
@@ -326,7 +327,7 @@ hr{
     width: 80%;
     height: 42.5vh;
     max-width: 300px;
-    max-height: 350px;
+    max-height: 270px;
     box-shadow: 0px 0px 7px white;
     gap: 10px;
     padding: 20px;
@@ -354,7 +355,7 @@ hr{
 .seccion_nosotros_carta_item a{
     text-decoration: none;
     color: #B60000;
-    font-size: clamp(15px, 3vw, 24px);
+    font-size: clamp(17px, 3vw, 24px);
 }
 
 .seccion_nosotros_carta_item .flecha{
@@ -377,6 +378,7 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    padding-bottom: 100px;
 }
 
 .seccion_servicios .imagen_barras_superior{
@@ -407,7 +409,7 @@ hr{
 }
 
 .seccion_servivios_texto p{
-    font-size: clamp(12px, 3vw, 25px);
+    font-size: clamp(14px, 3vw, 25px);
 }
 
 .seccion_servicios_slaiders{
@@ -440,6 +442,14 @@ hr{
     width: 7vw;
     max-width: 45px;
     cursor: pointer;
+}
+
+.poligono1{
+    margin-right: 10px;
+}
+
+.poligono2{
+    margin-left: 10px;
 }
 
 .seccion_servicios_slaider_imagen{
@@ -557,7 +567,7 @@ hr{
     display: flex;
     flex-direction: column;
     background-color: #1a1a1ac7;
-    padding: 10px 12px;
+    padding: 40px 12px;
     width: 90%;
     align-self: center;
     gap: 30px
@@ -576,7 +586,7 @@ hr{
 }
 
 .contenedor_texto p{
-    font-size: clamp(12px, 3vw, 25px);
+    font-size: clamp(14px, 3vw, 25px);
 }
 
 .seccion_contactanos_contenedor_formulario{
@@ -596,7 +606,7 @@ hr{
     padding: 2px 0;
     padding-left: 7px;
     width: 50vw;
-    height: auto;
+    height: 3vh;
     max-width: 220px;
     border-radius: 10px;
     background-color: #292929;
@@ -611,7 +621,7 @@ hr{
     border-radius: 10px;
     background: var(--Color-Grdiente-Rojo);
     font-weight: bold;
-    font-size: clamp(8px, 3vw, 14px);
+    font-size: clamp(10px, 3vw, 14px);
     width: 100%;
     max-width: 160px;
     align-self: center;
@@ -626,7 +636,7 @@ hr{
     position: absolute;
     width: 70px;
     height: 100px;
-    top: 70%;
+    top: 75%;
     right: -2%;
 }
 
@@ -648,7 +658,6 @@ footer{
 .footer_contenedor_imagen{
     width: 100%;
     height: 100%;
-    cursor: pointer;
     max-height: 50px;
 }
 
@@ -657,7 +666,7 @@ footer{
     padding-top: 0px;
     width: 100%;
     height: 100%;
-    text-align: center;
+    max-height: 50px;
     padding-top: 20px;
 }
 
@@ -668,7 +677,7 @@ footer{
 }
 
 .footer_contenedor_texto p:nth-child(1){
-    font-size: clamp(10px, 3vw, 16px);
+    font-size: 10px;
 }
 
 .footer_contenedor_texto_politicas{
@@ -678,11 +687,11 @@ footer{
 }
 
 .footer_contenedor_texto_politicas h1{
-    font-size: clamp(16px, 3vw, 20px);
+    font-size: 17px;
 }
 
 .footer_contenedor_texto_politicas p{
-    font-size: clamp(10px, 3vw, 16px);
+    font-size: 10px;
 }
 
 .footer_contenedor_texto_contactos{
@@ -692,11 +701,11 @@ footer{
 }
 
 .footer_contenedor_texto_contactos h1{
-    font-size: clamp(16px, 3vw, 20px);
+    font-size: 17px;
 }
 
 .footer_contenedor_texto_contactos p{
-    font-size: clamp(10px, 3vw, 16px);
+    font-size: 10px;
 }
 
 .footer_contenedor_texto_contactos_redes{
