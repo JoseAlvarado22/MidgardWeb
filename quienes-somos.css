@@ -102,14 +102,18 @@ body{
 /* seccion quienes somos principal*/
 
 .principal-quienes-somos{
-    padding-bottom: 60px;
+    /* padding-bottom: 10px; */
+    background-image: url('fondo-principal-quienes-somos.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.principal-imagen{
+/* .principal-imagen{
     position: absolute;
     height: 88%;
     z-index: -1;
-}
+} */
 
 .principal-container{  
     display: flex;
@@ -157,9 +161,9 @@ body{
 }
 
 .segundario-container-texto p{
-    color: white;
+    color: rgb(145, 140, 140);
     font-weight: bold;
-    font-size: clamp(17px, 3vw, 23px);
+    font-size: clamp(20px, 3vw, 23px);
 }
 
 .segundario-container-texto a{
@@ -181,7 +185,6 @@ body{
 }
 
 .terciario-container{
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,7 +229,7 @@ body{
 /* seccion quienes somos segundaria*/
 
 .section-segundaria{
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -562,9 +565,18 @@ footer{
 
 
 /* seccion quienes somos*/
-.principal-imagen{
+/* .principal-imagen{
     height: initial;
     width: 100%;
+} */
+
+.principal-quienes-somos{
+    /* padding-bottom: 50px; */
+    background-image: url('fondo-principal-quienes-somos2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
 }
 
 .segundario-container{
@@ -602,7 +614,7 @@ footer{
 @media (min-width:1100px){
 
 .terciario-container{
-    margin-top: 120px;
+    /* margin-top: 120px; */
 }
 }
 
