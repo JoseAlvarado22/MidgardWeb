@@ -41,20 +41,20 @@
     }
     
 
-    // funcion animacion de entrada de las cartas seccion inicio
-    animacionCartasInicio();
-    function animacionCartasInicio(){
-        const seccionInicio = document.querySelectorAll(".seccion_inicio_carta");
-        const observarInicio = new IntersectionObserver((ver)=>{
-            ver.forEach(entrada => {
-                if(entrada.isIntersecting){
-                    entrada.target.classList.add("activoInicio");
-                }
-            });
-        }, {threshold:0.2});
+    // // funcion animacion de entrada de las cartas seccion inicio
+    // animacionCartasInicio();
+    // function animacionCartasInicio(){
+    //     const seccionInicio = document.querySelectorAll(".seccion_inicio_carta");
+    //     const observarInicio = new IntersectionObserver((ver)=>{
+    //         ver.forEach(entrada => {
+    //             if(entrada.isIntersecting){
+    //                 entrada.target.classList.add("activoInicio");
+    //             }
+    //         });
+    //     }, {threshold:0.2});
 
-        seccionInicio.forEach(sec => observarInicio.observe(sec));
-    }
+    //     seccionInicio.forEach(sec => observarInicio.observe(sec));
+    // }
     
 
 
@@ -94,40 +94,41 @@
 
     // funcion para cuando no sea visible una seccion en este caso el nav y solo sea visible el logo flotante 
     // y cuando nos desplacemos para arriba y sea visible una seccion en este caso la principal se vuelva a ver el nav
-    ocultarNavMostrarLogo();
-    function ocultarNavMostrarLogo(){
-        const barraNav = document.querySelectorAll("#imagen_nav");
-        const verBarra = new IntersectionObserver((ver) => {
-            ver.forEach(entrada => {
-            if (!entrada.isIntersecting) {
-                entrada.target.classList.add("header_nav_imagen_fixed");
-                entrada.target.classList.remove("header_nav_imagen");
-            } 
-        });
-        }, {threshold: 1});
-        barraNav.forEach(sec => verBarra.observe(sec));
-    }
+    // 
+    // ocultarNavMostrarLogo();
+    // function ocultarNavMostrarLogo(){
+    //     const barraNav = document.querySelectorAll("#imagen_nav");
+    //     const verBarra = new IntersectionObserver((ver) => {
+    //         ver.forEach(entrada => {
+    //         if (!entrada.isIntersecting) {
+    //             entrada.target.classList.add("header_nav_imagen_fixed");
+    //             entrada.target.classList.remove("header_nav_imagen");
+    //         } 
+    //     });
+    //     }, {threshold: 1});
+    //     barraNav.forEach(sec => verBarra.observe(sec));
+    // }
     
-    ocultarLogoMostrarNav();
-    function ocultarLogoMostrarNav(){
-        const principal = document.querySelectorAll(".principal");
-        const verPrincipal = new IntersectionObserver((ver) => {
-            ver.forEach(entra => {
-                if(entra.isIntersecting){
+    // ocultarLogoMostrarNav();
+    // function ocultarLogoMostrarNav(){
+    //     const principal = document.querySelectorAll(".principal");
+    //     const verPrincipal = new IntersectionObserver((ver) => {
+    //         ver.forEach(entra => {
+    //             if(entra.isIntersecting){
 
-                    const barraNav = document.querySelectorAll("#imagen_nav");
-                    const verBarra = new IntersectionObserver((ver) => {
-                        ver.forEach(entrada => {
-                            if (entrada.isIntersecting) {
-                                entrada.target.classList.add("header_nav_imagen");
-                                entrada.target.classList.remove("header_nav_imagen_fixed");
-                            } 
-                        });
-                    }, {threshold: 0.1});
-                    barraNav.forEach(sec => verBarra.observe(sec));
-                }
-            })
-        }, {threshold: 0.5});
-        principal.forEach(sec => verPrincipal.observe(sec));
-    }
+    //                 const barraNav = document.querySelectorAll("#imagen_nav");
+    //                 const verBarra = new IntersectionObserver((ver) => {
+    //                     ver.forEach(entrada => {
+    //                         if (entrada.isIntersecting) {
+    //                             entrada.target.classList.add("header_nav_imagen");
+    //                             entrada.target.classList.remove("header_nav_imagen_fixed");
+    //                         } 
+    //                     });
+    //                 }, {threshold: 0.1});
+    //                 barraNav.forEach(sec => verBarra.observe(sec));
+    //             }
+    //         })
+    //     }, {threshold: 0.5});
+    //     principal.forEach(sec => verPrincipal.observe(sec));
+    // }
 })();

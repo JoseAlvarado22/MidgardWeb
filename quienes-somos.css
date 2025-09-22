@@ -1,0 +1,610 @@
+:root{
+    /* Variables usadas menos de 700px */
+    --Color-Grdiente-Vino:linear-gradient(
+        90deg,
+        rgba(48,11,11,1)30%,
+        rgba(233,233,233,1)100%
+    );
+
+    --Color-Grdiente-Rojo:linear-gradient(
+        90deg,
+        rgba(147,0,0,1) 0%,
+        rgba(145,101,101,1) 100%
+    );
+
+    --Tamaño-Titulos: clamp(22px, 5vw, 42px);
+    --Tamaño-parrafos: clamp(14px, 3vw, 23px);
+
+    /* Variables usadas mas de 700px */
+    --tamaño-titulos: clamp(14px, 5vw, 40px);
+    --tamaño-parrafos: clamp(14px, 3vw, 16px);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+/* Barra de navegacion */
+.header{
+    background-color: #000000;
+}
+
+.header_nav{
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    border-radius: 0 0 40px 40px;
+}
+
+.header_nav_imagen{
+    text-align: center;
+    position: fixed;
+    padding-top: 5px;
+    width: 100vw;
+    background-color: #161616;
+    z-index: 2;
+    border-radius: 0 0 50px 50px;
+}
+
+.header_nav_imagen .imagen{
+    width: 60%;
+    height: 75%;
+    max-width: 180px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+.header_nav_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7px;
+    padding-top: 55px;
+}
+
+.header_nav_container a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(10px, 3vw, 16px);
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.header_nav_container span{
+    font-size: clamp(16px, 6vw, 22px);
+    font-weight: bold;
+    background: var(--Color-Grdiente-Rojo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+
+.header_nav_container a:hover{
+    background-color: rgba(255, 255, 255, 0.63);
+    color: black;
+}
+
+
+/* seccion quienes somos principal*/
+
+.principal-quienes-somos{
+    padding-bottom: 60px;
+}
+
+.principal-imagen{
+    position: absolute;
+    height: 88%;
+    z-index: -1;
+}
+
+.principal-container{  
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 10px;
+}
+
+.segundario-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.segundario-container-titulo h1{
+    color: white;
+    font-size: var(--Tamaño-Titulos);
+    text-align: center;
+}
+
+.segundario-container-titulo span{
+    background: var(--Color-Grdiente-Vino);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.segundario-container-imagen{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ilustracion-imagen{
+    width: 100%;
+    max-width: 310px;
+    height: auto;
+}
+
+.segundario-container-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.segundario-container-texto p{
+    color: white;
+    font-weight: bold;
+    font-size: clamp(17px, 3vw, 23px);
+}
+
+.segundario-container-texto a{
+    color: white;
+    text-decoration: none;
+    width: 70%;
+    max-width: 147px;
+    padding: 7px 2px ;
+    background: var(--Color-Grdiente-Rojo);
+    font-size: clamp(12px, 3vw, 18px);
+    align-self: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.segundario-container-texto a:hover{
+    color: rgb(255, 255, 255);
+    background: rgba(79, 78, 78, 0.76);
+}
+
+.terciario-container{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.terciario-container-CEO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.CEO{
+    width: 50%;
+}
+
+.terciario-container-CEO h3{
+    font-size: clamp(17px, 3vw, 23px);
+}
+
+.terciario-container-CEOtexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.terciario-container-CEOtexto h3{
+    font-size: clamp(17px, 3vw, 23px);
+    color: #B90000;
+}
+
+.terciario-container-CEOtexto p{
+    font-size: var(--tamaño-parrafos);
+    color: #7B7B7B;
+    max-width: 1000px;
+}
+
+/* seccion quienes somos segundaria*/
+
+.section-segundaria{
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+
+.segundaria-imagen{
+    position: absolute;;
+    height: 70%;
+    z-index: -1;
+}
+
+
+.section-segundaria-container{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.seccion-segundaria-container-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.seccion-segundaria-container-texto h1{
+    font-size: clamp(18px, 5vw, 52px);
+}
+
+.seccion-segundaria-container-texto p{
+    font-size: var(--tamaño-parrafos);
+    max-width: 1000px;
+}
+
+.seccion-segundaria-container-imagen{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.seccion-segundaria-container-imagen img{
+    width: 100%;
+    max-width: 315px;
+}
+
+/* seccion quienes somos terciaria*/
+.section-tercearia{
+    padding-bottom: 60px;
+}
+
+.section-tercearia .triangulo-derecho{
+    position: absolute;
+    height: 70%;
+    right: 0;
+    z-index:-1;
+}
+
+.section-tercerceario-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.section-tercerceario-container h1{
+    font-size: clamp(18px, 5vw, 52px);
+}
+
+.section-tercerceario-container-cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    padding: 0 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.section-tercerceario-container-carta{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 15px rgb(162, 59, 59);
+    border-radius: 20px;
+    padding: 20px 5px;
+    width: 90%;
+    max-width: 291px;
+    height: 45vh;
+    gap: 10px;
+}
+
+.carta-ilustracion{
+    width: 100%;
+    height: 50%;
+}
+
+.carta-ilustracion img{
+    width: 70%;
+    max-width: 170px;
+}
+
+.carta-ilustracion img:nth-child(2){
+    width: 100%;
+}
+
+.section-tercerceario-container-carta h1{
+    font-size: clamp(14px, 5vw, 20px);
+}
+
+.section-tercerceario-container-carta p{
+    font-size: clamp(14px, 3vw, 16px);
+}
+
+.triangilo-izquierdo{
+    position:absolute;
+    height: 70%;
+    top: calc(410vh - 50vh);
+}
+
+
+/* pie de pagina */
+footer{
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.footer_contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.footer_contenedor_imagen{
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+}
+
+
+.footer_contenedor_imagen img{
+    padding-top: 0px;
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+    padding-top: 20px;
+}
+
+.footer_contenedor_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer_contenedor_texto p:nth-child(1){
+    font-size: 12px;
+}
+
+.footer_contenedor_texto_politicas{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer_contenedor_texto_politicas h1{
+    font-size: 17px;
+}
+
+.footer_contenedor_texto_politicas p{
+    font-size: 12px;
+}
+
+.footer_contenedor_texto_contactos{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer_contenedor_texto_contactos h1{
+    font-size: 17px;
+}
+
+.footer_contenedor_texto_contactos p{
+    font-size: 12px;
+}
+
+.footer_contenedor_texto_contactos_redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.footer_contenedor_texto_contactos_redes img{
+    cursor: pointer;
+    width: 22px;
+}
+
+.facebook:hover{
+    filter: drop-shadow(0px 0px 5px rgb(53, 53, 245));
+}
+
+.email:hover{
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+
+.whatsapp:hover{
+    filter: drop-shadow(0px 0px 5px rgb(62, 255, 101));
+}
+
+.insta:hover{
+    filter: drop-shadow(0px 0px 5px rgb(245, 64, 224));
+}
+
+
+@media (min-width:678px){
+    .triangilo-izquierdo{
+        display: none;
+    }
+}
+
+@media (min-width:700px){
+
+/* Barra de navegacion */
+.header_nav{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_nav_imagen{
+    position: initial;
+    padding-top: 5px;
+    width: 30%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.header_nav_imagen .imagen{
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+.header_nav_imagen_fixed{
+    text-align: center;
+    position: fixed;
+    padding-top: 5px;
+    width: 100vw;
+    background-color: #161616;
+    z-index: 2;
+    border-radius: 0 0 50px 50px;
+}
+
+.header_nav_imagen_fixed .imagen{
+    width: 60%;
+    height: 75%;
+    max-width: 180px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+.header_nav_container{
+    flex-direction: row;
+    padding: 0;
+    padding-right: 20px;
+}
+
+.header_nav_container a{
+    font-size: clamp(10px, 3vw, 16px);
+}
+
+/* pie de pagina */
+.footer_contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+
+.footer_contenedor_texto{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor_parrafo_footer{
+    width: 40%;
+    max-width: 350px;
+}
+
+.footer_contenedor_texto_politicas h1{
+    font-size: 17px;
+}
+
+
+.footer_contenedor_texto_contactos{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer_contenedor_texto_contactos h1{
+    font-size: 17px;
+}
+
+.footer_contenedor_texto_contactos p{
+    font-size: 12px;
+}
+
+.footer_contenedor_texto_contactos_redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.footer_contenedor_texto_contactos_redes img{
+    cursor: pointer;
+    width: 22px;
+}
+}
+
+@media (min-width:1000px){
+
+
+/* seccion quienes somos*/
+.principal-imagen{
+    height: initial;
+    width: 100%;
+}
+
+.segundario-container{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 1fr max-content;
+    padding: 20px 30px;
+}
+
+.segundario-container-titulo h1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+
+.segundario-container-imagen{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.ilustracion-imagen{
+    width: 40vw;
+    max-width: 450px;
+    height: auto;
+}
+
+.segundario-container-texto{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+}
+
+@media (min-width:1100px){
+
+.terciario-container{
+    margin-top: 120px;
+}
+}
+
+
+
