@@ -103,7 +103,7 @@ body{
 
 .principal-quienes-somos{
     /* padding-bottom: 10px; */
-    background-image: url('fondo-principal-quienes-somos.svg');
+    background-image: url('fondo-quienes-somos.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,7 +161,7 @@ body{
 }
 
 .segundario-container-texto p{
-    color: rgb(145, 140, 140);
+    color: rgb(152, 151, 151);
     font-weight: bold;
     font-size: clamp(20px, 3vw, 23px);
 }
@@ -349,7 +349,9 @@ body{
 .triangilo-izquierdo{
     position:absolute;
     height: 70%;
-    top: calc(410vh - 50vh);
+    bottom: -1900px;
+    z-index: -1;
+
 }
 
 
@@ -572,7 +574,7 @@ footer{
 
 .principal-quienes-somos{
     /* padding-bottom: 50px; */
-    background-image: url('fondo-principal-quienes-somos2.svg');
+    background-image: url('fondo-quienes-somos.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -608,6 +610,12 @@ footer{
 .segundario-container-texto{
     grid-column: 1/2;
     grid-row: 2/3;
+}
+
+.segundario-container-texto p{
+    color: rgb(152, 151, 151);
+    font-weight: bold;
+    font-size: clamp(20px, 3vw, 27px);
 }
 }
 
