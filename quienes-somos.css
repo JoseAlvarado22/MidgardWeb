@@ -12,7 +12,7 @@
         rgba(145,101,101,1) 100%
     );
 
-    --Tamaño-Titulos: clamp(22px, 5vw, 42px);
+    --Tamaño-Titulos: clamp(25px, 5vw, 42px);
     --Tamaño-parrafos: clamp(14px, 3vw, 23px);
 
     /* Variables usadas mas de 700px */
@@ -102,7 +102,7 @@ body{
 /* seccion quienes somos principal*/
 
 .principal-quienes-somos{
-    /* padding-bottom: 10px; */
+    padding-bottom: 50px;
     background-image: url('fondo-quienes-somos.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -163,7 +163,7 @@ body{
 .segundario-container-texto p{
     color: rgb(152, 151, 151);
     font-weight: bold;
-    font-size: clamp(20px, 3vw, 23px);
+    font-size: clamp(23px, 3vw, 23px);
 }
 
 .segundario-container-texto a{
@@ -173,7 +173,7 @@ body{
     max-width: 147px;
     padding: 7px 2px ;
     background: var(--Color-Grdiente-Rojo);
-    font-size: clamp(12px, 3vw, 18px);
+    font-size: clamp(15px, 3vw, 18px);
     align-self: center;
     border-radius: 10px;
     font-weight: bold;
@@ -190,6 +190,7 @@ body{
     align-items: center;
     gap: 20px;
     text-align: center;
+    padding: 0 15px;
 }
 
 .terciario-container-CEO{
@@ -242,7 +243,7 @@ body{
 
 
 .section-segundaria-container{
-    padding: 0 10px;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,7 +259,7 @@ body{
 }
 
 .seccion-segundaria-container-texto h1{
-    font-size: clamp(18px, 5vw, 52px);
+    font-size: clamp(24px, 5vw, 52px);
 }
 
 .seccion-segundaria-container-texto p{
@@ -279,6 +280,7 @@ body{
 
 /* seccion quienes somos terciaria*/
 .section-tercearia{
+    padding: 0 15px;
     padding-bottom: 60px;
 }
 
@@ -298,7 +300,7 @@ body{
 }
 
 .section-tercerceario-container h1{
-    font-size: clamp(18px, 5vw, 52px);
+    font-size: clamp(24px, 5vw, 52px);
 }
 
 .section-tercerceario-container-cartas{
@@ -351,6 +353,7 @@ body{
     height: 70%;
     bottom: -1900px;
     z-index: -1;
+    left: 0;
 
 }
 
