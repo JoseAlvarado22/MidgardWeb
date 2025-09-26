@@ -10,7 +10,7 @@
 <body>
     
     <!--  -->
-    <header id="cabecera" class="header">
+    <!-- <header id="cabecera" class="header">
         <nav class="header_nav">
             <div id="imagen_nav" class="header_nav_imagen"><img id="logo" class="imagen" src="midgardweb_logo.svg" alt="Logo MidgardWeb"></div>
 
@@ -18,9 +18,42 @@
                 <a href="index.html">Inicio</a>
                 <a href="planes.html">Planes</a>
                 <a href="servicios-adicionales.html">Servicios Adicionales</a>
-                <a href="uienes-somos.html">Quienes Somos</a>
+                <a href="quienes-somos.html">Quienes Somos</a>
                 <a href="contactanos.html"><span>Contactanos</span></a>
             </div>
+        </nav>
+    </header> -->
+
+    <header id="cabecera" class="header">
+        <nav class="header_nav">
+            <div id="imagen_nav" class="header_nav_imagen"><img id="logo" class="imagen" src="midgardweb_logo.svg" alt="Logo MidgardWeb"></div>
+
+            <label class="nav_togle">
+                <input type="checkbox" class="nav_input" id="menu-input">
+            </label>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Inicio</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="planes.html" class="nav__link">Planes</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="servicios-adicionales.html" class="nav__link">Servicios Adicionales</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="quienes-somos.html" class="nav__link">Quienes Somos</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="contactanos.html" class="nav__link"><span>Contactanos</span></a>
+                </li>
+                
+            </ul>
         </nav>
     </header>
 
@@ -36,9 +69,9 @@
 
             <div class="seccion_contactanos_contenedor_formulario">
                 <form class="contenedor_formulario">
-                    <input class="campo" type="text" placeholder="Nombre">
-                    <input class="campo" type="email" placeholder="Email">
-                    <input class="campo" type="tel" placeholder="Telefono">
+                    <input class="campo" type="text" placeholder="Nombre" required>
+                    <input class="campo" type="email" placeholder="Email" required>
+                    <input class="campo" type="tel" placeholder="Telefono" required>
                     <input class="submit" type="submit" value="Contactanos ahora">
                 </form>
             </div>

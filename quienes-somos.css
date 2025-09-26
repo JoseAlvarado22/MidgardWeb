@@ -36,8 +36,8 @@ body{
 }
 
 /* Barra de navegacion */
-.header{
-    background-color: #000000;
+/* .header{
+    background-color: #A00000;
 }
 
 .header_nav{
@@ -96,17 +96,110 @@ body{
 .header_nav_container a:hover{
     background-color: rgba(255, 255, 255, 0.63);
     color: black;
+} */
+
+.header{
+    background-color: #000000;
+}
+
+.header_nav{
+    background-color: #161616;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    --imagen-menu: url('list\ \(1\).svg');
+    --traslado-menu: translate(-100%);
+    padding: 0 15px;
+}
+
+.header_nav:has(.nav_input:checked){
+    --traslado-menu: translate(0);
+    --imagen-menu: url('x-circle.svg');
+}
+
+.header_nav_imagen{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.header_nav_imagen .imagen{
+    width: 100%;
+    height: 100%;
+    max-width: 180px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+.nav__list{
+    transform: var(--traslado-menu);
+    list-style: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.82);
+    inset: 0;
+    padding: 1.5rem 5%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap:20px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.header_nav_imagen, .nav_togle{
+    z-index: 10;
+}
+
+.nav_togle{
+    width: 30px;
+    height: 30px;
+    background-image: var(--imagen-menu);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: background-image 0.5s;
+}
+
+.nav_input{
+    display: none;
+}
+
+.nav__item a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(16px, 3vw, 20px);
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.nav__item span{
+    font-size: clamp(22px, 6vw, 26px);
+    font-weight: bold;
+    background: var(--Color-Grdiente-Rojo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+
+.nav__item a:hover{
+    background-color: rgba(255, 255, 255, 0.63);
+    color: black;
 }
 
 
 /* seccion quienes somos principal*/
 
 .principal-quienes-somos{
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     background-image: url('fondo-quienes-somos.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: -1;
 }
 
 /* .principal-imagen{
@@ -151,6 +244,17 @@ body{
     width: 100%;
     max-width: 310px;
     height: auto;
+    animation: ilustracion 3s;
+}
+
+@keyframes ilustracion{
+    0%{
+        transform: scale(0.2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
 .segundario-container-texto{
@@ -163,7 +267,7 @@ body{
 .segundario-container-texto p{
     color: rgb(152, 151, 151);
     font-weight: bold;
-    font-size: clamp(23px, 3vw, 23px);
+    font-size: clamp(23px, 3vw, 23px);  
 }
 
 .segundario-container-texto a{
@@ -177,6 +281,7 @@ body{
     align-self: center;
     border-radius: 10px;
     font-weight: bold;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .segundario-container-texto a:hover{
@@ -203,6 +308,7 @@ body{
 
 .CEO{
     width: 50%;
+    object-fit: cover;
 }
 
 .terciario-container-CEO h3{
@@ -230,8 +336,8 @@ body{
 /* seccion quienes somos segundaria*/
 
 .section-segundaria{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
@@ -316,7 +422,6 @@ body{
 .section-tercerceario-container-carta{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
     box-shadow: 0px 0px 15px rgb(162, 59, 59);
     border-radius: 20px;
     padding: 20px 5px;
@@ -351,7 +456,7 @@ body{
 .triangilo-izquierdo{
     position:absolute;
     height: 70%;
-    bottom: -1900px;
+    bottom: -2000px;
     z-index: -1;
     left: 0;
 
@@ -465,7 +570,7 @@ footer{
 @media (min-width:700px){
 
 /* Barra de navegacion */
-.header_nav{
+/* .header_nav{
     flex-direction: row;
     justify-content: space-between;
 }
@@ -512,6 +617,36 @@ footer{
 
 .header_nav_container a{
     font-size: clamp(10px, 3vw, 16px);
+} */
+
+.header{
+    background-color: #000000;
+}
+
+.header_nav{
+    --traslado-menu: translate(0);
+}
+
+.nav__list{
+    position: static;
+    grid-auto-flow: column;
+    justify-content: unset;
+    align-items: unset;
+    padding: 0;
+    transition: unset;
+    background-color: initial;
+}
+
+.nav_togle{
+    display: none;
+}
+
+.nav__item a{
+    font-size: clamp(14px, 3vw, 16px);
+}
+
+.nav__item span{
+    font-size: clamp(18px, 6vw, 22px);
 }
 
 /* pie de pagina */
@@ -567,16 +702,17 @@ footer{
 }
 
 @media (min-width:1000px){
-
-
 /* seccion quienes somos*/
 /* .principal-imagen{
     height: initial;
     width: 100%;
 } */
 
+.section-CEO{
+    padding-top: 50px;
+}
+
 .principal-quienes-somos{
-    /* padding-bottom: 50px; */
     background-image: url('fondo-quienes-somos.svg');
     background-position: center;
     background-repeat: no-repeat;
